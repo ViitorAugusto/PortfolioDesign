@@ -18,7 +18,9 @@ const config: Config = {
         secondary: "#EC1B09",
         tertiary: "#F2F5F9",
         whitemoon: "#EBF2FA",
+        whiteicon: "#F2F7FC",
         black: "#000000",
+        
       }
     },
   },
