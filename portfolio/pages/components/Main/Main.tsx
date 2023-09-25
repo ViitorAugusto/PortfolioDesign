@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MainContentLeft } from "./SideLeft/MainContentLeft";
+import { MainContentRight } from "./SideRight/MainContentRight";
 
 export function Main() {
   const [mainHeight, setMainHeight] = useState(0);
@@ -17,13 +18,21 @@ export function Main() {
     };
   }, []);
   return (
-    <main className="container mx-auto text-black"style={{ height: mainHeight }}>
-        <div className="border-2 border-blue-600 w-4/5 h-full mx-auto flex py-4">
-            <section className=" w-1/3 flex justify-start items-end">
-                <MainContentLeft />
-            </section>
-            <section className="bg-green-500 w-2/3"></section>
-        </div>
+    <main
+      className="container mx-auto text-black"
+      style={{ height: mainHeight }}
+    >
+      <div className="mx-auto flex flex-col py-2">
+        <section className="w-full flex flex-col mt-24 relative rounded-md">
+          <div className="w-52 h-52 bg-slate-800 mx-auto absolute -top-24 left-12 z-10 rounded-md">
+            
+          </div>
+          <MainContentLeft />
+        </section>
+        <section className="">
+          <MainContentRight />
+        </section>
+      </div>
     </main>
   );
 }

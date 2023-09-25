@@ -21,7 +21,9 @@ const config: Config = {
         whiteicon: "#F2F7FC",
         black: "#000000",
         
-      }
+      }, spacing: {
+        '0.5': '0.125rem', 
+      },
     },
   },
   plugins: [],

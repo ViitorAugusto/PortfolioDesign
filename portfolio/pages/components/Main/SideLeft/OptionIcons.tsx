@@ -11,7 +11,7 @@ export const OptionIcons = () => {
               hover:shadow-lg hover:bg-blue-100
               "
             >
-             <li> <icon.image className="text-2xl text-blue-800 " /></li>
+             <li> <icon.image className="text-2xl text-blue-800"/></li>
             </ul>
           </div>
         );
