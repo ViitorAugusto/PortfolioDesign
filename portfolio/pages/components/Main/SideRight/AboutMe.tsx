@@ -1,4 +1,5 @@
-import { CarouselNavigation } from "./CarouselNavigation";
+import { Navigation } from "./CarouselNavigation";
+import aboutme from "../../../../public/AboutMe.json";
 
 export const AboutMe = () => {
   return (
@@ -18,17 +19,23 @@ export const AboutMe = () => {
             as tendências emergentes do setor.
           </p>
         </div>
-        
-   
-        <div className="flex items-center justify-center gap-4 px-2">
-          <div className="flex-1 bg-gradient-to-r from-yellow-500 to-red-500 h-0.5"></div>
+
+        <div className="flex items-center justify-start gap-4 px-2">
+          {/* <div className="flex-1 bg-gradient-to-r from-yellow-500 to-red-500 h-0.5"></div> */}
           <h2 className="text-2xl">What I do!</h2>
         </div>
-        
-        <div>
-          <CarouselNavigation />
+
+        <div className="grid grid-cols-1 grid-rows-4 gap-4">
+          {aboutme.map((item, index) => (
+            <Navigation
+              key={index}
+              title={item.title}
+              description={item.description}
+              bgColor={item.bgColor}
+              icon={item.icon}
+            />
+          ))}
         </div>
-          
       </div>
     </>
   );

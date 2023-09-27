@@ -17,13 +17,15 @@ export const MainContentLeft = () => {
       <div className=" flex flex-col mx-auto ">
         <div className="w-11/12 mx-auto rounded-lg">
           <div className="p-2 rounded-t-lg bg-whiteicon flex justify-center ">
-          <div className="flex justify-start ml-3 items-center gap-4 border-b-2 py-3 w-full ">
+            <div className="flex justify-start ml-3 items-center gap-4 border-b-2 py-3 w-full ">
               <div className="">
                 <MdOutlinePhoneAndroid className="text-red-500 text-3xl" />
               </div>
               <div>
                 <p className="text-sm ">Phone</p>
-                <p className="font-bold text-sm">+55 (11) 9 7135-1731</p>
+                <p className="font-bold text-sm oldstyle-nums">
+                  +55 (11) 9 7135-1731
+                </p>
               </div>
             </div>
           </div>
@@ -35,7 +37,10 @@ export const MainContentLeft = () => {
               </div>
               <div className="flex-1 ">
                 <p className="text-sm ">Email</p>
-                <p className="font-bold text-xs ">vitoraugustodemattos@gmail.com</p>
+                <p className="font-bold text-xs">
+                  vitoraugustodemattos@gmail.com
+                </p>
+              
               </div>
             </div>
           </div>

@@ -1,33 +1,36 @@
-import { Carousel } from "@material-tailwind/react";
+import { BsCodeSlash, BsLightbulb } from "react-icons/bs";
+import { GiStoneCrafting } from "react-icons/gi";
+import { FcEngineering } from "react-icons/fc";
 
-export function CarouselNavigation() {
-  return (
-    <Carousel
-      className="rounded-xl bg-blue-500 flex flex-col"
-      navigation={({ setActiveIndex, activeIndex, length }) => (
-        <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-          {new Array(length).fill("").map((_, i) => (
-            <span
-              key={i}
-              className={`block h-1 cursor-pointer  rounded-2xl transition-all content-[''] ${
-                activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-              }`}
-              onClick={() => setActiveIndex(i)}
-            />
-          ))}
-        </div>
-      )}
-    >
-      <div className="h-full w-full object-cover bg-green-500">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-        error ipsam nemo quos nostrum quia iste quidem illum? Amet iusto iure
-        minima natus? Expedita voluptate inventore doloribus ab totam qu
-      </div>
-      <div className="">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-        error ipsam nemo quos nostrum quia iste quidem illum? Amet iusto iure
-        minima natus? Expedita voluptate inventore doloribus ab totam qu
-      </div>
-    </Carousel>
-  );
+interface PropsAboutMe {
+  title: string;
+  description: string;
+  bgColor: string;
+  icon: string;
 }
+const iconMappings: Record<string, JSX.Element> = {
+  "code-slash": <BsCodeSlash  className="text-secondary h-6 w-6"/>,
+  "icon1": <FcEngineering className="text-primary h-6 w-6"/>,
+  "icon2": <GiStoneCrafting className="text-secondary h-6 w-6"/>,
+  "icon3": <BsLightbulb className="text-primary h-6 w-6"/>,
+};
+
+export const Navigation = ({
+  title,
+  description,
+  bgColor,
+  icon,
+}: PropsAboutMe) => {
+  const selectedIcon = iconMappings[icon];
+  return (
+    <>
+      <div className={`bg-${bgColor} rounded-md py-4 px-2 flex flex-col gap-2`}>
+        <h2 className="text-2xl flex justify-start items-center gap-3">
+          <span>{selectedIcon}</span>
+          {title}
+        </h2>
+        <p className="text-sm">{description}</p>
+      </div>
+    </>
+  );
+};

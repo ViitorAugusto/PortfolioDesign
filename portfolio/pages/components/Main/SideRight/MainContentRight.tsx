@@ -36,14 +36,6 @@ export function MainContentRight() {
       desc: `We're not always in the position that we want to be at.
       We're constantly growing. We're constantly making mistakes. We're
       constantly trying to express ourselves and actualize our dreams.`,
-    },
-    {
-      label: "Contact",
-      value: "contact",
-      icon: BiSolidContact,
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
     }
   ];
 
@@ -67,23 +59,23 @@ export function MainContentRight() {
   return (
     <Tabs value="home">
       <TabsHeader 
-      className="border-2 py-2 flex justify-center items-center my-2"
+      className="border-2 px-4 flex justify-center items-center my-2"
       indicatorProps={{
-        className: "bg-blue-300/25 shadow-none !text-black_3",
+        className: "bg-blue-300/30 shadow-none !text-black_3",
         theme,
       }}
       >
         {data.map(({ label, value, icon }) => (
-          <Tab key={value} value={value} className="">
+          <Tab key={value} value={value} className=" flex-1 ">
             <div className="flex items-center p-1 m-1 flex-col gap-2 ">
-              {React.createElement(icon, { className: "w-7 h-7" })}
+              {React.createElement(icon, { className: "w-6 h-6" })}
               {label}
             </div>
           </Tab>
         ))}
       </TabsHeader>
      
-      <TabsBody className=" border-2 border-blue-400 ">
+      <TabsBody className=" ">
         {data.map(({ value, desc }) => (
           <TabPanel key={value} value={value}>
             {desc}
