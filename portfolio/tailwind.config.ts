@@ -29,6 +29,9 @@ const config: Config = {
       }, spacing: {
         '0.5': '0.125rem',
       },
+      fontSize: {
+        '2xs': '.625rem',
+      }
     },
   },
   plugins: [],
