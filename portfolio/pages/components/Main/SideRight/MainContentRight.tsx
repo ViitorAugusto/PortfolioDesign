@@ -9,9 +9,11 @@ import {
 import { MdWorkOutline } from "react-icons/md";
 import { AiOutlineHome } from "react-icons/ai";
 import { TbNotes } from "react-icons/tb";
-import { BiSolidContact } from "react-icons/bi";
 import { AboutMe } from "./AboutMe";
 import { Resume } from "./Resume";
+import ProjectList from "./WorksProjects";
+import Projects from "./FilterProjects";
+
 
 export function MainContentRight() {
   const data = [
@@ -31,9 +33,7 @@ export function MainContentRight() {
       label: "Work",
       value: "work",
       icon: MdWorkOutline,
-      desc: `We're not always in the position that we want to be at.
-      We're constantly growing. We're constantly making mistakes. We're
-      constantly trying to express ourselves and actualize our dreams.`,
+      desc: <Projects  />,
     }
   ];
 

@@ -2,17 +2,29 @@
     {
         "title": "Work Skills",
         "skills" : [
-            "Java",
-            "C++",
-            "Python",
-            "HTML",
-            "CSS",
-            "JavaScript",
+            "NEXT.js",
+            "Reacrt.js",
+            "HTML5",
+            "Css 3",
+            "Tailwind CSS",
             "SQL",
-            "Git",
+            "Javascript",
+            "Git/GitLab",
             "Linux",
-            "Windows",
-            "MacOS"
+            "Nest.js",
+            "Node.js",
+            "MongoDB"
+        ]
+    },
+    {
+        "title": "Soft Skills",
+        "skills" : [
+            "Time Management",
+            "Mentorship",
+            "Impeccable communication",
+            "Writing",
+            "Research",
+            "Flexibility"
         ]
     }
 ]
