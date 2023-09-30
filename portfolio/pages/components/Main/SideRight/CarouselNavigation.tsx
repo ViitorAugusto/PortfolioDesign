@@ -24,7 +24,7 @@ export const Navigation = ({
   const selectedIcon = iconMappings[icon];
   return (
     <>
-      <div className={`bg-${bgColor} rounded-md py-4 px-2 flex flex-col gap-2`}>
+      <div className={`bg-${bgColor === "primary" ? "primary" : "whiteicon"} rounded-md py-4 px-2 flex flex-col gap-2`}>
         <h2 className="text-2xl flex justify-start items-center gap-3">
           <span>{selectedIcon}</span>
           {title}

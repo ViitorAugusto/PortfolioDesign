@@ -1,5 +1,6 @@
 import { PiGraduationCap, PiSuitcaseSimpleBold } from "react-icons/pi";
-
+import { Skills } from "./Skills";
+import  infoSkills  from "../../../../public/InfoSkills.json";
 export const Resume = () => {
   const education = [
     {
@@ -17,7 +18,7 @@ export const Resume = () => {
   ];
   const experience = [
     {
-      date: "2020-2010",
+      date: "1990-2010",
       title: "Software Development",
       institution: "Moringa School",
       bgResume: "resume",
@@ -60,7 +61,7 @@ export const Resume = () => {
           <h2 className="text-black font-medium text-xl">Experience</h2>
         </div>
       </div>
-      {education.map((item, index) => (
+      {experience.map((item, index) => (
           <div
             className={`bg-${item.bgResume} px-4 py-6 rounded-md space-y-1`}
             key={index}
@@ -70,6 +71,13 @@ export const Resume = () => {
             <p className="font-medium text-black">{item.institution}</p>
           </div>
         ))}
+
+        <div>
+          {infoSkills.map((infos, index) => (
+            <Skills key={index} info={infos} />
+          ))}
+          
+        </div>
     </>
   );
 };

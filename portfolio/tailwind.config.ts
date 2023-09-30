@@ -13,6 +13,10 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      backgroundColor: {
+        resume: "#FFE3BF",
+        resume2: "#FFEED9"
+      },
       colors: {
         primary: "#FF9C1A",
         primaryTransparent: "#FF9C1A30",
@@ -21,11 +25,9 @@ const config: Config = {
         whitemoon: "#EBF2FA",
         whiteicon: "#F2F7FC",
         black: "#000000",
-        resume: "#FFE3BF",
-        resume2: "#FFEED9"
-        
+        grayskills: "#E1E8EF",
       }, spacing: {
-        '0.5': '0.125rem', 
+        '0.5': '0.125rem',
       },
     },
   },
