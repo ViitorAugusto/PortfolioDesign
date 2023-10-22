@@ -11,7 +11,6 @@ import { AiOutlineHome } from "react-icons/ai";
 import { TbNotes } from "react-icons/tb";
 import { AboutMe } from "./AboutMe";
 import { Resume } from "./Resume";
-import ProjectList from "./ProjectCard";
 import Projects from "./FilterProjects";
 
 

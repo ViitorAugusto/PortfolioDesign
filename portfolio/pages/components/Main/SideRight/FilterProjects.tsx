@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ProjectCard } from "./ProjectCard";
+import  projects  from "../../../../public/Projects.json";
 
 const projectsData = [
   {
@@ -70,8 +71,10 @@ export default function Projects() {
           </div>
         ))}
       </div>
-
-      <ProjectCard />
+      {projects.map((project) => (
+        <ProjectCard key={project.id} data={project} />
+      ))}
+      
     </div>
   );
 }

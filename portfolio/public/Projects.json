@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Star Wars",
+    "tags": ["Frontend", "Backend"],
+    "description": "A long time ago in a galaxy far, far away....",
+    "tecnologies": [
+      {
+        "name": "React",
+        "icon": "React"
+      },
+      {
+        "name": "Next.js",
+        "icon": "Next.js"
+      }
+    ],
+    "liveOn": [
+      {
+        "name": "Live",
+        "icon": "Live"
+      },
+      {
+        "name": "Github",
+        "icon": "Github"
+      }
+    ],
+    "createdAt": "30/09/2023"
+  }
+]
